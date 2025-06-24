@@ -58,15 +58,27 @@ function Home() {
 }
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => setMenuOpen((open) => !open);
+  const handleLinkClick = () => setMenuOpen(false);
+
   return (
     <Router>
-      <nav style={{ padding: '1rem', background: '#f0f0f0', marginBottom: '2rem' }}>
-        <Link to="/" style={{ marginRight: '1rem' }}>Home</Link>
-        <Link to="/lions" style={{ marginRight: '1rem' }}>Lions</Link>
-        <Link to="/tigers" style={{ marginRight: '1rem' }}>Tigers</Link>
-        <Link to="/parrot" style={{ marginRight: '1rem' }}>Parrot</Link>
-        <Link to="/peacock" style={{ marginRight: '1rem' }}>Peacock</Link>
-        <Link to="/swan">Swan</Link>
+      <nav className="navbar">
+        <button className="nav-toggle" onClick={handleMenuToggle} aria-label="Toggle navigation">
+          <span className="hamburger"></span>
+          <span className="hamburger"></span>
+          <span className="hamburger"></span>
+        </button>
+        <div className={`nav-links${menuOpen ? ' open' : ''}`}>
+          <Link to="/" onClick={handleLinkClick}>Home</Link>
+          <Link to="/lions" onClick={handleLinkClick}>Lions</Link>
+          <Link to="/tigers" onClick={handleLinkClick}>Tigers</Link>
+          <Link to="/parrot" onClick={handleLinkClick}>Parrot</Link>
+          <Link to="/peacock" onClick={handleLinkClick}>Peacock</Link>
+          <Link to="/swan" onClick={handleLinkClick}>Swan</Link>
+        </div>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />

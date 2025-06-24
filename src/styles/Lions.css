@@ -14,4 +14,32 @@
   background: rgba(255, 255, 224, 0.7);
   border-radius: 8px;
   padding: 1rem 2rem;
+}
+
+@media (max-width: 900px) {
+  .lion-page {
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+  }
+  .lion-page ul, .lion-page p {
+    padding: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .lion-page {
+    padding: 1rem 0.5rem;
+    border-radius: 0;
+  }
+  .lion-page h1 {
+    font-size: 2rem;
+  }
+  .lion-page h2 {
+    font-size: 1.3rem;
+  }
+  .lion-page h3 {
+    font-size: 1.1rem;
+  }
+  .lion-page ul, .lion-page p {
+    padding: 1rem;
+  }
 } 

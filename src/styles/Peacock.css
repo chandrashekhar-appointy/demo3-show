@@ -14,4 +14,32 @@
   background: rgba(224, 247, 250, 0.7);
   border-radius: 8px;
   padding: 1rem 2rem;
+}
+
+@media (max-width: 900px) {
+  .peacock-page {
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+  }
+  .peacock-page ul, .peacock-page p {
+    padding: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .peacock-page {
+    padding: 1rem 0.5rem;
+    border-radius: 0;
+  }
+  .peacock-page h1 {
+    font-size: 2rem;
+  }
+  .peacock-page h2 {
+    font-size: 1.3rem;
+  }
+  .peacock-page h3 {
+    font-size: 1.1rem;
+  }
+  .peacock-page ul, .peacock-page p {
+    padding: 1rem;
+  }
 } 

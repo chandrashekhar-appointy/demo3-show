@@ -14,4 +14,32 @@
   background: rgba(240, 250, 255, 0.7);
   border-radius: 8px;
   padding: 1rem 2rem;
+}
+
+@media (max-width: 900px) {
+  .swan-page {
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+  }
+  .swan-page ul, .swan-page p {
+    padding: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .swan-page {
+    padding: 1rem 0.5rem;
+    border-radius: 0;
+  }
+  .swan-page h1 {
+    font-size: 2rem;
+  }
+  .swan-page h2 {
+    font-size: 1.3rem;
+  }
+  .swan-page h3 {
+    font-size: 1.1rem;
+  }
+  .swan-page ul, .swan-page p {
+    padding: 1rem;
+  }
 } 
