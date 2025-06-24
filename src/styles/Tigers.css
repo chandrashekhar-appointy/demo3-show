@@ -1,0 +1,17 @@
+.tiger-page {
+  background: linear-gradient(120deg, #fff5e0 0%, #ffd6b3 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(255, 87, 34, 0.08);
+}
+.tiger-page h1 {
+  color: #ff5722;
+}
+.tiger-page h2, .tiger-page h3 {
+  color: #bf360c;
+}
+.tiger-page ul, .tiger-page p {
+  background: rgba(255, 245, 224, 0.7);
+  border-radius: 8px;
+  padding: 1rem 2rem;
+} 

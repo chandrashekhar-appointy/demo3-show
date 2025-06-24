@@ -1,0 +1,17 @@
+.lion-page {
+  background: linear-gradient(120deg, #fffbe0 0%, #ffe0b3 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(255, 193, 7, 0.08);
+}
+.lion-page h1 {
+  color: #b8860b;
+}
+.lion-page h2, .lion-page h3 {
+  color: #d2691e;
+}
+.lion-page ul, .lion-page p {
+  background: rgba(255, 255, 224, 0.7);
+  border-radius: 8px;
+  padding: 1rem 2rem;
+} 
