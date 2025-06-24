@@ -26,7 +26,6 @@ body {
   flex-wrap: wrap;
   position: relative;
 }
-
 .nav-toggle {
   display: none;
   flex-direction: column;
