@@ -8,6 +8,7 @@ import Tigers from './pages/Tigers';
 import Parrot from './pages/Parrot';
 import Peacock from './pages/Peacock';
 import Swan from './pages/Swan';
+
 function Home() {
   return (
     <div className="main-content">
